@@ -1,0 +1,31 @@
+<script>
+    
+    
+
+
+    var restaurante = ["Lacapital","Losingenieros"];
+    
+    var postres = ["Pay de limon","Imposible","Arroz con leche","Pastel de chocolate","Flan Napolitano","Gelatinas","Pastel de tres leches","Jericalla",restaurante];
+    
+    var bebidas=["Boing de uva","Refresco Coca cola","Jarito de limon","Agua de naranja","Agua de frutas","Jarito de mandarina","Agua de piña","boing de guayaba","Refresco seven",postres];
+    
+    var carta = [postres,comida,bebidas];
+    
+    var comida = ["Milanesas","Spaghetti","Albondigas","Sopa","Pozole","Tostadas","Quesadillas","Tacos","Sopes","Huaraches","Crema de zanahoria","Picadillo",carta];
+    
+    
+    var  orden = {
+        "carta" : {
+            "comida" : {
+                "comidauno":"Pozole",
+            }
+        }
+      
+    }
+
+    
+    console.log(orden["carta"]["comida"][1]);
+    console.log(orden);
+    console.log(orden["liquidos"]["bebidas"]);
+
+    </script>
