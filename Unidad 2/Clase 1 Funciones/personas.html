@@ -1,0 +1,39 @@
+<script>
+var nombre = ["Erick","Erick2","Erick3","Erick5","Erick4"]
+var apellidos =["Mendoza","Mendoza2","Mendoza3","Mendoza5","Mendoza4"]
+var letras = [a,b,c,d,f,g,h,i,j]
+
+for (var i = 0; i < 10; i++){
+
+}
+
+function persona (){
+   let nombre = nombres[numeroAleatorios(0,nombres.legth-1)];
+   let apellidos= apellidos[numeroAleatorios(0,apellidos.legth-1)];
+   let edad= numeroAleatorios(1,21);
+   if(numeroAleatorios(0,1) == 0){
+    var sexo = "Hombre";
+
+   }else{
+       var sexo = "Mujer";
+   }
+    let codigo = generadorCodigo(6)
+    let persona = {
+        nombre : nombreNuevo,
+        apellido: apellidoNuevo,
+        edad : edadNuevo,
+        sexo : sexoNuevo,
+        codigo : codigoNuevo,
+    }
+    return persona;
+}
+function numeroAleatorios(min,max){
+    return Math.floor(Match.random() * (max - min * 1)) + min;
+}
+function generadorCodigo(n){
+    let cadena = "";
+    for(var i = 0; i< n; i++){
+        cadena = cadena + letras[numeroAleatorios(0,letras.length -1)];
+    }
+    return caadena;
+}
